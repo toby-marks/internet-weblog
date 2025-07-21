@@ -1,11 +1,11 @@
-{{ partial "site_header.html" . }}
-{{ partial "page_header.html" . }}
+{{ partialCached "site_header.html" . }}
+{{ partialCached "page_header.html" . }}
 
 <main class="content">
   <article class="post">
-    {{ partial "not_found.html" . }}
+    {{ partialCached "not_found.html" . }}
   </article>
 </main>
 
-{{ partial "page_footer.html" . }}
-{{ partial "site_footer.html" . }}
+{{ partialCached "page_footer.html" . }}
+{{ partialCached "site_footer.html" . }}
