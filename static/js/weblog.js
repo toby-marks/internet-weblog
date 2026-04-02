@@ -26,8 +26,12 @@ iweblog.application = function() {
 	}
 }();
 
-/// configure lightbox
-lightbox.option({
-	'resizeDuration': 400,
-	'wrapAround': true
-})
+/// configure lightbox when DOM is ready
+$(document).ready(function() {
+	if (typeof lightbox !== 'undefined') {
+		lightbox.option({
+			'resizeDuration': 400,
+			'wrapAround': true
+		});
+	}
+});
